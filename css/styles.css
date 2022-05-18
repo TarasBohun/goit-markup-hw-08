@@ -42,6 +42,7 @@ button {
   font-family: Raleway, sans-serif;
   color: var(--studio-color);
   font-size: 26px;
+  letter-spacing: 0.03em;
 }
 
 .logo-white {
@@ -56,11 +57,13 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
+
   border-bottom: 1px solid var(--border-header-color);
 }
 
 .header-contacts {
   color: var(--text-grey-color);
+  letter-spacing: 0.02em;
 }
 
 .header-menu:hover,
@@ -75,6 +78,7 @@ header {
 /* * footer */
 footer {
   background-color: var(--background-solutions-footer);
+  letter-spacing: 0.03em;
 }
 
 #contacts {
@@ -95,6 +99,7 @@ footer {
 .section-1 {
   background-color: var(--background-solutions-footer);
   text-align: center;
+  letter-spacing: 0.06em;
 }
 
 h1 {
@@ -102,7 +107,6 @@ h1 {
   font-size: 44px;
   line-height: 1.4;
   max-width: 696px;
-  height: 120px;
   margin: 0 auto;
 }
 
@@ -114,7 +118,13 @@ h1 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.9;
+  letter-spacing: 0.06em;
   cursor: pointer;
+}
+
+.benefits-blocks {
+  width: 270px;
+  letter-spacing: 0.03em;
 }
 
 .benefits {
@@ -130,25 +140,20 @@ h1 {
   line-height: 1.7;
 }
 
-.benefits-blocks {
-  width: 270px;
-  height: 101px;
-}
-
 h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 .section-team {
   background-color: var(--background-team-button);
-  font-size: 16px;
+  letter-spacing: 0.03em;
 }
 
 .team-blocks {
   width: 270px;
-  height: 368px;
   text-align: center;
   background-color: var(--page-background-color);
 }
@@ -156,10 +161,12 @@ h2 {
 .team-members {
   font-weight: 500;
   line-height: 1.18;
+  font-size: 16px;
 }
 
 .team-specialist {
   line-height: 1.18;
+  font-size: 16px;
   color: var(--text-grey-color);
 }
 
@@ -173,33 +180,34 @@ h2 {
 
 .btn-portfolio {
   height: 38px;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
   padding: 6px 22px;
+  letter-spacing: 0.03em;
   background-color: var(--background-team-button);
 }
 
 .cases-blocks {
   width: 370px;
-  height: 404px;
   border: 1px solid var(--border-cases-color);
 }
 
 .cases-name {
   width: 322px;
-  height: 36px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
   margin: 18px 24px 4px;
 }
 
 .cases-descritpion {
   width: 322px;
-  height: 30px;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.03em;
   color: var(--text-grey-color);
   margin: 0 24px 20px;
 }
