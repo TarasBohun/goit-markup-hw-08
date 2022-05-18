@@ -57,12 +57,15 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
-
   border-bottom: 1px solid var(--border-header-color);
 }
 
 .header-contacts {
   color: var(--text-grey-color);
+  letter-spacing: 0.02em;
+}
+
+.header-menu {
   letter-spacing: 0.02em;
 }
 
