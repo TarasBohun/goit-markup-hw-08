@@ -17,135 +17,170 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="./index.html" lang="en" class="logo"><span class="accent">Web</span>Studio</a>
-        <ul>
-          <li><a href="./index.html" class="header-menu">Студія</a></li>
-          <li><a href="" class="accent header-menu">Портфоліо</a></li>
-          <li><a href="#contacts" class="header-menu">Конаткти</a></li>
+    <header class="header">
+      <div class="container header-flex">
+        <nav class="navigation">
+          <a href="./index.html" lang="en" class="logo link"
+            ><span class="accent">Web</span>Studio</a
+          >
+          <ul class="list_header-menu list">
+            <li class="list-item"><a href="./index.html" class="header-menu link">Студія</a></li>
+            <li class="list-item"><a href="" class="accent header-menu link">Портфоліо</a></li>
+            <li class="list-item"><a href="#contacts" class="header-menu link">Конаткти</a></li>
+          </ul>
+        </nav>
+        <ul class="list_header-contacts list">
+          <li class="list-item">
+            <a href="mailto:info@devstudio.com" class="header-contacts header-email link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="list-item">
+            <a href="tel:+380961111111" class="header-contacts header-tel link"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com" class="header-contacts">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="header-contacts">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
 
     <main>
-      <section>
-        <ul>
-          <li><button type="button" class="btn-portfolio">Все</button></li>
-          <li><button type="button" class="btn-portfolio">Веб-сайти</button></li>
-          <li><button type="button" class="btn-portfolio">Додатки</button></li>
-          <li><button type="button" class="btn-portfolio">Дизайн</button></li>
-          <li><button type="button" class="btn-portfolio">Маркетинг</button></li>
-        </ul>
-        <ul>
-          <li class="cases-blocks">
-            <img src="./images/our-cases/tehnokrjak.jpg" alt="Технокряк" width="370" height="294" />
-            <h3 class="cases-name">Технокряк</h3>
-            <p class="cases-descritpion">Веб-сайт</p>
-          </li>
-          <li class="cases-blocks">
-            <img
-              src="./images/our-cases/poster-bascketball.jpg"
-              alt="Постер New Orlean vs Golden Star"
-              width="370"
-              height="294"
-            />
-            <h3 class="cases-name">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
-            <p class="cases-descritpion">Дизайн</p>
-          </li>
-          <li class="cases-blocks">
-            <img
-              src="./images/our-cases/seafood.jpg"
-              alt="Ресторан SeaFood"
-              width="370"
-              height="294"
-            />
-            <h3 class="cases-name">Ресторан <span lang="en">SeaFood</span></h3>
-            <p class="cases-descritpion">Додаток</p>
-          </li>
-          <li class="cases-blocks">
-            <img
-              src="./images/our-cases/project-prime.jpg"
-              alt="Проєкт Prime"
-              width="370"
-              height="294"
-            />
-            <h3 class="cases-name">Проєкт <span lang="en">Prime</span></h3>
-            <p class="cases-descritpion">Маркетинг</p>
-          </li>
-          <li class="cases-blocks">
-            <img
-              src="./images/our-cases/project-boxes.jpg"
-              alt="Проєкт Boxes"
-              width="370"
-              height="294"
-            />
-            <h3 class="cases-name">Проєкт <span lang="en">Boxes</span></h3>
-            <p class="cases-descritpion">Додаток</p>
-          </li>
-          <li class="cases-blocks">
-            <img
-              src="./images/our-cases/inspirations.jpg"
-              alt="Inspirations has no Borders"
-              width="370"
-              height="294"
-            />
-            <h3 class="cases-name" lang="en">Inspirations has no Borders</h3>
-            <p class="cases-descritpion">Веб-сайт</p>
-          </li>
-          <li class="cases-blocks">
-            <img
-              src="./images/our-cases/limited-edition.jpg"
-              alt="Видавництво Limited Edition"
-              width="370"
-              height="294"
-            />
-            <h3 class="cases-name">Видавництво <span lang="en">Limited Edition</span></h3>
-            <p class="cases-descritpion">Дизайн</p>
-          </li>
-          <li class="cases-blocks">
-            <img
-              src="./images/our-cases/project-lab.jpg"
-              alt="Проєкт LAB"
-              width="370"
-              height="294"
-            />
-            <h3 class="cases-name">Проєкт <span lang="en">LAB</span></h3>
-            <p class="cases-descritpion">Маркетинг</p>
-          </li>
-          <li class="cases-blocks">
-            <img
-              src="./images/our-cases/growing-business.jpg"
-              alt="Growing Business"
-              width="370"
-              height="294"
-            />
-            <h3 class="cases-name" lang="en">Growing Business</h3>
-            <p class="cases-descritpion">Додаток</p>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <ul class="list btn-portfolio-list">
+            <li><button type="button" class="button btn-portfolio">Все</button></li>
+            <li><button type="button" class="button btn-portfolio">Веб-сайти</button></li>
+            <li><button type="button" class="button btn-portfolio">Додатки</button></li>
+            <li><button type="button" class="button btn-portfolio">Дизайн</button></li>
+            <li><button type="button" class="button btn-portfolio">Маркетинг</button></li>
+          </ul>
+          <ul class="list cases-list">
+            <li class="cases-item">
+              <img
+                class="img-gap"
+                src="./images/our-cases/tehnokrjak.jpg"
+                alt="Технокряк"
+                width="370"
+                height="294"
+              />
+              <h3 class="cases-name">Технокряк</h3>
+              <p class="cases-descritpion">Веб-сайт</p>
+            </li>
+            <li class="cases-item">
+              <img
+                class="img-gap"
+                src="./images/our-cases/poster-bascketball.jpg"
+                alt="Постер New Orlean vs Golden Star"
+                width="370"
+                height="294"
+              />
+              <h3 class="cases-name">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+              <p class="cases-descritpion">Дизайн</p>
+            </li>
+            <li class="cases-item">
+              <img
+                class="img-gap"
+                src="./images/our-cases/seafood.jpg"
+                alt="Ресторан SeaFood"
+                width="370"
+                height="294"
+              />
+              <h3 class="cases-name">Ресторан <span lang="en">SeaFood</span></h3>
+              <p class="cases-descritpion">Додаток</p>
+            </li>
+            <li class="cases-item">
+              <img
+                class="img-gap"
+                src="./images/our-cases/project-prime.jpg"
+                alt="Проєкт Prime"
+                width="370"
+                height="294"
+              />
+              <h3 class="cases-name">Проєкт <span lang="en">Prime</span></h3>
+              <p class="cases-descritpion">Маркетинг</p>
+            </li>
+            <li class="cases-item">
+              <img
+                class="img-gap"
+                src="./images/our-cases/project-boxes.jpg"
+                alt="Проєкт Boxes"
+                width="370"
+                height="294"
+              />
+              <h3 class="cases-name">Проєкт <span lang="en">Boxes</span></h3>
+              <p class="cases-descritpion">Додаток</p>
+            </li>
+            <li class="cases-item">
+              <img
+                class="img-gap"
+                src="./images/our-cases/inspirations.jpg"
+                alt="Inspirations has no Borders"
+                width="370"
+                height="294"
+              />
+              <h3 class="cases-name" lang="en">Inspirations has no Borders</h3>
+              <p class="cases-descritpion">Веб-сайт</p>
+            </li>
+            <li class="cases-item">
+              <img
+                class="img-gap"
+                src="./images/our-cases/limited-edition.jpg"
+                alt="Видавництво Limited Edition"
+                width="370"
+                height="294"
+              />
+              <h3 class="cases-name">Видавництво <span lang="en">Limited Edition</span></h3>
+              <p class="cases-descritpion">Дизайн</p>
+            </li>
+            <li class="cases-item">
+              <img
+                class="img-gap"
+                src="./images/our-cases/project-lab.jpg"
+                alt="Проєкт LAB"
+                width="370"
+                height="294"
+              />
+              <h3 class="cases-name">Проєкт <span lang="en">LAB</span></h3>
+              <p class="cases-descritpion">Маркетинг</p>
+            </li>
+            <li class="cases-item">
+              <img
+                class="img-gap"
+                src="./images/our-cases/growing-business.jpg"
+                alt="Growing Business"
+                width="370"
+                height="294"
+              />
+              <h3 class="cases-name" lang="en">Growing Business</h3>
+              <p class="cases-descritpion">Додаток</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <a href="" lang="en" class="logo logo-white"><span class="accent">Web</span>Studio</a>
-      <address id="contacts">
-        <ul>
-          <li>
-            <a class="google-map" href="https://goo.gl/maps/TuuQDuqZVwNmB288A" target="_blank"
-              >м.Київ, пл. Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li><a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+    <footer class="footer">
+      <div class="container">
+        <a href="" lang="en" class="logo logo-white link"><span class="accent">Web</span>Studio</a>
+        <address id="contacts" class="contacts">
+          <ul class="list">
+            <li>
+              <a
+                class="google-map link"
+                href="https://goo.gl/maps/TuuQDuqZVwNmB288A"
+                target="_blank"
+                >м.Київ, пл. Лесі Українки, 26</a
+              >
+            </li>
+            <li>
+              <a class="footer-contacts link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li><a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
