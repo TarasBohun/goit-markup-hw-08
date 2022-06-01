@@ -162,8 +162,7 @@ body {
   line-height: 1.4;
   max-width: 696px;
   color: var(--text-white-color);
-  padding-top: 200px;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
