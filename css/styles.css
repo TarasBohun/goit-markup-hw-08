@@ -43,10 +43,19 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  outline: 2px solid tomato;
 }
 
 .section {
   padding: 94px 0;
+}
+
+.img-gap {
+  display: block;
+}
+
+.container > .list {
+  display: flex;
 }
 
 /* ? ------------ COMMON STYLES ------------ */
@@ -214,10 +223,6 @@ body {
   margin: 0;
 }
 
-.benefits > .list {
-  display: flex;
-}
-
 .benefits-item {
   font-size: 14px;
   width: calc((100% - 90px) / 3);
@@ -240,10 +245,6 @@ body {
 
 .services {
   padding-bottom: 94px;
-}
-
-.services > .list {
-  display: flex;
 }
 
 .services .services-item:not(:last-child) {
@@ -278,14 +279,6 @@ body {
   padding-bottom: 30px;
   margin: 0;
   color: var(--text-grey-color);
-}
-
-.img-gap {
-  display: block;
-}
-
-.section-team > .list {
-  display: flex;
 }
 
 .section-team .team-item:not(:last-child) {
