@@ -14,13 +14,6 @@
   --border-cases-color: #eee;
 }
 
-/* ? ------------ GLOBAL STYLES ------------ */
-body {
-  background-color: var(--page-background-color);
-  font-family: Roboto, sans-serif;
-  color: var(--text-black-color);
-}
-
 /* UTILITIES */
 .list {
   list-style: none;
@@ -36,6 +29,14 @@ body {
 .button {
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ? ------------ GLOBAL STYLES ------------ */
+body {
+  background-color: var(--page-background-color);
+  font-family: Roboto, sans-serif;
+  color: var(--text-black-color);
 }
 
 .container {
@@ -144,6 +145,10 @@ body {
   color: var(--text-transperent-white);
 }
 
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 /* ! ------------ INDEX.HTML ------------ */
 .hero {
   background-color: var(--background-solutions-footer);
@@ -167,7 +172,6 @@ body {
   font-weight: 700;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  cursor: pointer;
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
@@ -303,7 +307,6 @@ body {
 .btn-portfolio:focus {
   background-color: var(--active-web-color);
   color: var(--text-white-color);
-  cursor: pointer;
 }
 
 .btn-portfolio-list {
