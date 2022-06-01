@@ -19,17 +19,6 @@ body {
   background-color: var(--page-background-color);
   font-family: Roboto, sans-serif;
   color: var(--text-black-color);
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 /* UTILITIES */
@@ -53,16 +42,10 @@ html {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
 }
 
 .section {
   padding: 94px 0;
-}
-
-.space-between {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* ? ------------ COMMON STYLES ------------ */
@@ -178,18 +161,12 @@ html {
   margin: auto;
   margin-bottom: 30px;
 }
-/* ??????????????????????? */
-.hero-container {
-  height: 600px;
-}
-/* ??????????????????????? */
 
 .btn-order {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  font-family: inherit;
   cursor: pointer;
   min-width: 200px;
   height: 50px;
@@ -218,11 +195,6 @@ html {
 }
 
 /* * ------------ BENEFITS ------------ */
-.benefits-item {
-  font-size: 14px;
-  width: 270px;
-  letter-spacing: 0.03em;
-}
 
 .benefits-title {
   font-weight: 700;
@@ -239,6 +211,20 @@ html {
   margin: 0;
 }
 
+.benefits > .list {
+  display: flex;
+}
+
+.benefits-item {
+  font-size: 14px;
+  width: calc((100% - 90px) / 3);
+  letter-spacing: 0.03em;
+}
+
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* * ------------ SERVICES ------------ */
 .title-second {
   font-weight: 700;
@@ -247,6 +233,18 @@ html {
   letter-spacing: 0.03em;
   margin: 0 0 50px;
   text-align: center;
+}
+
+.services {
+  padding-bottom: 94px;
+}
+
+.services > .list {
+  display: flex;
+}
+
+.services .services-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* * ------------ TEAM ------------ */
@@ -283,13 +281,20 @@ html {
   display: block;
 }
 
+.section-team > .list {
+  display: flex;
+}
+
+.section-team .team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* ! ------------ PORTFOLIO.HTML ------------ */
 .btn-portfolio {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  font-family: inherit;
   padding: 6px 22px;
   background-color: var(--background-team-button);
 }
@@ -313,12 +318,12 @@ html {
 
 /* * ------------ CASES ------------ */
 .cases-item {
-  width: 370px;
+  display: inline-block;
+  width: calc((100% - 60px) / 3);
   border: 1px solid var(--border-cases-color);
 }
 
 .cases-name {
-  width: 322px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
