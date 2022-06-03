@@ -192,6 +192,10 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.hero-title-container {
+  padding: 200px 0;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -257,7 +261,8 @@ body {
 }
 
 .team-item {
-  width: 270px;
+  /* width: 270px; */
+  width: calc((100% -90px) / 4);
   text-align: center;
   background-color: var(--page-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -269,15 +274,18 @@ body {
   font-weight: 500;
   line-height: 1.18;
   font-size: 16px;
-  margin: 30px 0 10px;
+  margin: 0 0 10px;
 }
 
 .team-specialist {
   font-size: 16px;
   line-height: 1.18;
-  padding-bottom: 30px;
   margin: 0;
   color: var(--text-grey-color);
+}
+
+.team-members-container {
+  padding: 30px 0;
 }
 
 .section-team .team-item:not(:last-child) {
@@ -312,7 +320,7 @@ body {
 
 /* * ------------ CASES ------------ */
 .cases-item {
-  display: inline-block;
+  /* width: 370px; */
   width: calc((100% - 60px) / 3);
   border: 1px solid var(--border-cases-color);
 }
@@ -322,7 +330,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 20px 24px 4px;
+  margin: 0 0 4px;
 }
 
 .cases-descritpion {
@@ -331,7 +339,11 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--text-grey-color);
-  margin: 0 24px 20px;
+  margin: 0;
+}
+
+.cases-name-container {
+  padding: 20px 24px;
 }
 
 .cases-list {
