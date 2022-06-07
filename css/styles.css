@@ -43,6 +43,7 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  outline: 1px solid tomato;
 }
 
 .section {
@@ -51,6 +52,8 @@ body {
 
 .img-gap {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container > .list {
@@ -162,6 +165,7 @@ body {
   background-color: var(--background-solutions-footer);
   letter-spacing: 0.06em;
   text-align: center;
+  background-image: url(/hw3/images/hero_img/hero_bcg.jpg);
 }
 
 .hero-title {
@@ -232,9 +236,14 @@ body {
   letter-spacing: 0.03em;
 }
 
-.benefits-item:not(:last-child) {
-  margin-right: 30px;
+.benefits .list {
+  display: flex;
+  gap: 30px;
 }
+
+/* .benefits-item:not(:last-child) {
+  margin-right: 30px;
+} */
 
 /* * ------------ SERVICES ------------ */
 .title-second {
