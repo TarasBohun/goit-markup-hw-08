@@ -267,7 +267,7 @@ body {
   max-width: 1600px;
   margin: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/hero_img/hero_bcg.jpg);
+    url('../images/hero_img/hero_bcg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -343,6 +343,7 @@ body {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -496,7 +497,7 @@ body {
   transition: opacity 250ms var(--timing-animation), visibility 250ms var(--timing-animation);
 }
 
-.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
