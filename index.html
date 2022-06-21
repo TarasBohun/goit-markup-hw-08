@@ -472,6 +472,43 @@
             <use href="./images/icons.svg#icon-close-modal"></use>
           </svg>
         </button>
+        <form action="" class="form form-modal">
+          <h3 class="form-title">Залиште свої дані, ми перетелефонуємо</h3>
+          <div class="input-group">
+            <div class="form-field">
+              <label for="name">Ім'я</label>
+              <input type="text" name="name" id="name" class="name" />
+            </div>
+            <div class="form-field">
+              <label for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" class="tel" />
+            </div>
+            <div class="form-field">
+              <label for="mail">Пошта</label>
+              <input type="email" name="mail" id="mail" class="mail" />
+            </div>
+            <div class="form-field">
+              <label for="comment">Коментар</label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+                class="comment"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+          </div>
+          <div class="checkbox-confirm">
+            <input type="checkbox" name="confirm" id="confirm" />
+            <label for="confirm"
+              >Згідний із поширенням і приймаю <a href="">Умови договора</a>
+            </label>
+          </div>
+          <div class="div-btn-submit">
+            <button type="submit" class="button btn-submit">Відправити</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
