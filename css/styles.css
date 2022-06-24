@@ -690,11 +690,21 @@ body {
   margin-bottom: 30px;
 }
 
-.check-box span {
-  margin-right: 7px;
+.check-box {
+  display: flex;
 }
 
-span svg {
+.check-box:focus {
+}
+
+.check-box span {
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-confirm:focus + label .check-empty {
+  outline: 1px solid var(--active-web-color);
 }
 
 .checkbox-confirm:checked + label .check-empty {
