@@ -1,0 +1,76 @@
+.cases-item {
+  width: calc((100% - 60px) / 3);
+  border: 1px solid var(--border-cases-color);
+
+  transition: box-shadow 250ms var(--timing-animation);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+}
+
+.cases-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin: 0 0 4px;
+}
+
+.cases-descritpion {
+  width: 322px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--text-grey-color);
+  margin: 0;
+}
+
+.cases-name-container {
+  padding: 20px 24px;
+}
+
+.cases-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cases-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.cases-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(+101%);
+  transition: transform 250ms var(--timing-animation);
+
+  .cases-link:hover &,
+  .cases-link:focus & {
+    transform: translateX(0%);
+  }
+}
+
+.cases-overlay-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  margin: 0;
+  color: var(--page-background-color);
+}

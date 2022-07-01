@@ -1,0 +1,22 @@
+.customers-list__link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icon-team-color);
+  border-radius: 4px;
+  fill: var(--icon-team-color);
+
+  transition: border-color 250ms var(--timing-animation), fill 250ms var(--timing-animation);
+
+  &:hover,
+  &:focus {
+    fill: var(--active-web-color);
+    border-color: var(--active-web-color);
+  }
+}
+
+.customers-list__item:not(:last-child) {
+  margin-right: 30px;
+}
