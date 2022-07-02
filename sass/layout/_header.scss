@@ -34,7 +34,9 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition: color 250ms var(--timing-animation);
+  @include transitions(color);
+  // transition: color 250ms var(--timing-animation);
+
   &:hover,
   &:focus {
     color: var(--active-web-color);
