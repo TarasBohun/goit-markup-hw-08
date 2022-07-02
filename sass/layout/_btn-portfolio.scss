@@ -6,14 +6,14 @@
   padding: 6px 22px;
   background-color: var(--background-team-button);
 
-  transition: box-shadow 250ms var(--timing-animation),
-    background-color 250ms var(--timing-animation), color 250ms var(--timing-animation);
+  @include transitions(box-shadow background-color color);
+  // transition: box-shadow 250ms var(--timing-animation),
+  // background-color 250ms var(--timing-animation), color 250ms var(--timing-animation);
 
   &:hover,
   &:focus {
     background-color: var(--active-web-color);
     color: var(--text-white-color);
-
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }

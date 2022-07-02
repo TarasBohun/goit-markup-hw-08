@@ -98,7 +98,9 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: background-color 250ms var(--timing-animation), fill 250ms var(--timing-animation);
+  transition-property: background-color fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-animation);
 }
 .soc-list__link:hover, .soc-list__link:focus {
   background-color: var(--active-web-color);
@@ -111,7 +113,7 @@ body {
   margin: 0 auto;
 }
 
-.header-contacts__link, .menu, .nav, .flex {
+.input-confirm, .header-contacts__link, .menu, .nav, .flex {
   display: flex;
   align-items: center;
 }
@@ -124,9 +126,9 @@ body {
 }
 
 .logo {
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   letter-spacing: 0.03em;
-  font-family: Raleway, sans-serif;
   color: var(--studio-color);
 }
 
@@ -158,6 +160,9 @@ body {
 .header-contacts {
   color: var(--text-grey-color);
   letter-spacing: 0.02em;
+}
+
+.header-contacts--to-right {
   margin-left: auto;
 }
 
@@ -172,7 +177,9 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: currentColor;
-  transition: color 250ms var(--timing-animation);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-animation);
 }
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--active-web-color);
@@ -280,14 +287,14 @@ body {
 
 .hero {
   background-color: var(--background-solutions-footer);
-  letter-spacing: 0.06em;
   text-align: center;
 }
 
 .hero__title {
-  font-size: 44px;
   font-weight: 900;
+  font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   max-width: 696px;
   color: var(--text-white-color);
   margin: 0 auto;
@@ -309,8 +316,8 @@ body {
 }
 
 .hero__btn {
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
   min-width: 200px;
@@ -318,7 +325,9 @@ body {
   padding: 10px 32px;
   background-color: var(--active-web-color);
   color: var(--text-white-color);
-  transition: background-color 250ms var(--timing-animation), box-shadow 250ms var(--timing-animation);
+  transition-property: background-color box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-animation);
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: #188ce8;
@@ -413,13 +422,12 @@ body {
 
 .team__members {
   font-weight: 500;
-  line-height: 1.18;
   font-size: 16px;
+  line-height: 1.18;
   margin: 0 0 10px;
 }
 
 .team__specialist {
-  font-size: 16px;
   line-height: 1.18;
   margin: 0;
   color: var(--text-grey-color);
@@ -438,7 +446,9 @@ body {
   border: 1px solid var(--icon-team-color);
   border-radius: 4px;
   fill: var(--icon-team-color);
-  transition: border-color 250ms var(--timing-animation), fill 250ms var(--timing-animation);
+  transition-property: fill border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-animation);
 }
 .customers-list__link:hover, .customers-list__link:focus {
   fill: var(--active-web-color);
@@ -475,7 +485,9 @@ body {
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-animation), visibility 250ms var(--timing-animation);
+  transition-property: transform visibility;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-animation);
 }
 
 .backdrop.is-hidden .modal {
@@ -547,7 +559,9 @@ body {
   padding: 0;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  transition: border-color 250ms var(--timing-animation);
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-animation);
 }
 .input-modal:focus {
   border-color: var(--active-web-color);
@@ -559,7 +573,9 @@ body {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  transition: fill 250ms var(--timing-animation);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-animation);
 }
 .input-field:focus-within > .icon-modal-form {
   fill: var(--active-web-color);
@@ -583,9 +599,7 @@ body {
 
 .input-confirm {
   position: relative;
-  display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -622,15 +636,17 @@ body {
 .btn-submit {
   display: block;
   margin: 0 auto;
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
   min-width: 200px;
   height: 50px;
   background-color: var(--active-web-color);
   color: var(--text-white-color);
-  transition: background-color 250ms var(--timing-animation), box-shadow 250ms var(--timing-animation);
+  transition-property: background-color box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-animation);
 }
 .btn-submit:hover, .btn-submit:focus {
   background-color: var(--btn-blue-hover);
@@ -644,7 +660,9 @@ body {
   letter-spacing: 0.03em;
   padding: 6px 22px;
   background-color: var(--background-team-button);
-  transition: box-shadow 250ms var(--timing-animation), background-color 250ms var(--timing-animation), color 250ms var(--timing-animation);
+  transition-property: box-shadow background-color color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-animation);
 }
 .btn-portfolio:hover, .btn-portfolio:focus {
   background-color: var(--active-web-color);
@@ -670,7 +688,9 @@ li:first-child > .btn-portfolio {
 .cases-item {
   width: calc((100% - 60px) / 3);
   border: 1px solid var(--border-cases-color);
-  transition: box-shadow 250ms var(--timing-animation);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-animation);
 }
 .cases-item:hover, .cases-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -720,7 +740,9 @@ li:first-child > .btn-portfolio {
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
-  transition: transform 250ms var(--timing-animation);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-animation);
 }
 .cases-link:hover .cases-overlay, .cases-link:focus .cases-overlay {
   transform: translateX(0%);

@@ -9,9 +9,11 @@
 }
 
 .footer-contacts {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  @include font(null, 14px, 1.7, 0.03em);
+  // font-size: 14px;
+  // line-height: 1.7;
+  // letter-spacing: 0.03em;
+
   font-style: inherit;
   margin-top: 20px;
 }
@@ -34,9 +36,11 @@
 }
 
 .footer-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.15;
+  @include font(700, 14px, 1.15, null);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.15;
+
   text-transform: uppercase;
   margin: 0 0 20px;
   padding-top: 12px;

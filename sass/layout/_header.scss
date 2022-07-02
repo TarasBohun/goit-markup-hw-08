@@ -1,7 +1,8 @@
 .header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.15;
+  @include font(500, 14px, 1.15, null);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.15;
   border-bottom: 1px solid var(--border-header-color);
 }
 
@@ -10,9 +11,12 @@
 }
 
 .logo {
-  font-size: 26px;
-  letter-spacing: 0.03em;
   font-family: Raleway, sans-serif;
+  @include font(null, 26px, null, 0.03em);
+
+  // font-size: 26px;
+  // letter-spacing: 0.03em;
+
   color: var(--studio-color);
 }
 
@@ -36,6 +40,7 @@
 .menu__link {
   display: block;
   letter-spacing: 0.02em;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -53,8 +58,11 @@
 
 .header-contacts {
   color: var(--text-grey-color);
-  letter-spacing: 0.02em;
 
+  letter-spacing: 0.02em;
+}
+
+.header-contacts--to-right {
   margin-left: auto;
 }
 
@@ -67,11 +75,15 @@
 
 .header-contacts__link {
   @extend %flex-align;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
   color: currentColor;
-  transition: color 250ms var(--timing-animation);
+
+  @include transitions(color);
+
+  // transition: color 250ms var(--timing-animation);
 
   &:hover,
   &:focus {

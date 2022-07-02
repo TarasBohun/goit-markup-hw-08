@@ -29,7 +29,9 @@
 
   transform: translate(-50%, -50%) scale(1);
 
-  transition: transform 250ms var(--timing-animation), visibility 250ms var(--timing-animation);
+  @include transitions(transform visibility);
+
+  // transition: transform 250ms var(--timing-animation), visibility 250ms var(--timing-animation);
 }
 
 .backdrop.is-hidden .modal {

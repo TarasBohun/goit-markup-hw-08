@@ -2,7 +2,9 @@
   width: calc((100% - 60px) / 3);
   border: 1px solid var(--border-cases-color);
 
-  transition: box-shadow 250ms var(--timing-animation);
+  @include transitions(box-shadow);
+
+  // transition: box-shadow 250ms var(--timing-animation);
 
   &:hover,
   &:focus {
@@ -58,7 +60,9 @@
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(+101%);
-  transition: transform 250ms var(--timing-animation);
+
+  @include transitions(transform);
+  // transition: transform 250ms var(--timing-animation);
 
   .cases-link:hover &,
   .cases-link:focus & {

@@ -54,7 +54,9 @@
   justify-content: center;
   border-radius: 50%;
 
-  transition: background-color 250ms var(--timing-animation), fill 250ms var(--timing-animation);
+  @include transitions(background-color fill);
+
+  // transition: background-color 250ms var(--timing-animation), fill 250ms var(--timing-animation);
 
   &:hover,
   &:focus {

@@ -21,15 +21,18 @@
 }
 
 .team__members {
-  font-weight: 500;
-  line-height: 1.18;
-  font-size: 16px;
+  @include font(500, 16px, 1.18, null);
+
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.18;
+
   margin: 0 0 10px;
 }
 
 .team__specialist {
-  font-size: 16px;
   line-height: 1.18;
+
   margin: 0;
   color: var(--text-grey-color);
 }

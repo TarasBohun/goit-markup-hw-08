@@ -1,13 +1,15 @@
 .hero {
   background-color: var(--background-solutions-footer);
-  letter-spacing: 0.06em;
   text-align: center;
 }
 
 .hero__title {
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
+  @include font(900, 44px, 1.36, 0.06em);
+  // font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
+  // letter-spacing: 0.06em;
+
   max-width: 696px;
   color: var(--text-white-color);
   margin: 0 auto;
@@ -30,10 +32,12 @@
 }
 
 .hero__btn {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
+  @include font(700, 16px, 1.9, 0.06em);
+
+  // font-size: 16px;
+  // font-weight: 700;
+  // line-height: 1.9;
+  // letter-spacing: 0.06em;
 
   min-width: 200px;
   height: 50px;
@@ -41,8 +45,10 @@
   background-color: var(--active-web-color);
   color: var(--text-white-color);
 
-  transition: background-color 250ms var(--timing-animation),
-    box-shadow 250ms var(--timing-animation);
+  @include transitions(background-color box-shadow);
+
+  // transition: background-color 250ms var(--timing-animation),
+  //   box-shadow 250ms var(--timing-animation);
 
   &:hover,
   &:focus {
