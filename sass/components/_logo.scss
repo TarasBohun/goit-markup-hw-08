@@ -1,0 +1,9 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  @include font(null, 26px, null, 0.03em);
+
+  // font-size: 26px;
+  // letter-spacing: 0.03em;
+
+  color: var(--studio-color);
+}

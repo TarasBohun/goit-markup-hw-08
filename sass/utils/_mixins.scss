@@ -7,6 +7,6 @@
 
 @mixin transitions($property) {
   transition-property: $property;
-  transition-duration: 250ms;
+  transition-duration: 2500ms;
   transition-timing-function: var(--timing-animation);
 }
