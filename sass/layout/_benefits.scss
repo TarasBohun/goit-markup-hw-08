@@ -1,7 +1,8 @@
 .benefits__title {
-  font-weight: 700;
-  font-size: inherit;
-  line-height: 1.15;
+  @include font(700, inherit, 1.15, null);
+  // font-weight: 700;
+  // font-size: inherit;
+  // line-height: 1.15;
   text-transform: uppercase;
   margin: 0 0 10px;
 }

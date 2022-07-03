@@ -1,12 +1,13 @@
 .btn-portfolio {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
+  @include font(500, 16px, 1.6, 00.03em);
+  // font-size: 16px;
+  // font-weight: 500;
+  // line-height: 1.6;
+  // letter-spacing: 0.03em;
   padding: 6px 22px;
   background-color: var(--background-team-button);
 
-  @include transitions(box-shadow background-color color);
+  @include transitions(box-shadow, background-color, color);
   // transition: box-shadow 250ms var(--timing-animation),
   // background-color 250ms var(--timing-animation), color 250ms var(--timing-animation);
 

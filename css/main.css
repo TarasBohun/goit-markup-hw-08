@@ -116,8 +116,8 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition-property: background-color fill;
-  transition-duration: 2500ms;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-animation);
 }
 .soc-list__link:hover, .soc-list__link:focus {
@@ -147,7 +147,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   transition-property: color;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-animation);
 }
 .menu__link:hover, .menu__link:focus {
@@ -180,7 +180,7 @@ body {
   padding-bottom: 32px;
   color: currentColor;
   transition-property: color;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-animation);
 }
 .header-contacts__link:hover, .header-contacts__link:focus {
@@ -327,8 +327,8 @@ body {
   padding: 10px 32px;
   background-color: var(--active-web-color);
   color: var(--text-white-color);
-  transition-property: background-color box-shadow;
-  transition-duration: 2500ms;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-animation);
 }
 .hero__btn:hover, .hero__btn:focus {
@@ -448,8 +448,8 @@ body {
   border: 1px solid var(--icon-team-color);
   border-radius: 4px;
   fill: var(--icon-team-color);
-  transition-property: fill border-color;
-  transition-duration: 2500ms;
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-animation);
 }
 .customers-list__link:hover, .customers-list__link:focus {
@@ -468,7 +468,9 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms var(--timing-animation), visibility 250ms var(--timing-animation);
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-animation);
 }
 
 .backdrop.is-hidden {
@@ -487,8 +489,8 @@ body {
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) scale(1);
-  transition-property: transform visibility;
-  transition-duration: 2500ms;
+  transition-property: transform, visibility;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-animation);
 }
 
@@ -509,7 +511,9 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: fill 250ms var(--timing-animation);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-animation);
 }
 .close-modal-btn:hover {
   fill: var(--active-web-color);
@@ -562,7 +566,7 @@ body {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition-property: border-color;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-animation);
 }
 .input-modal:focus {
@@ -576,7 +580,7 @@ body {
   left: 12px;
   transform: translateY(-50%);
   transition-property: fill;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-animation);
 }
 .input-field:focus-within > .icon-modal-form {
@@ -646,8 +650,8 @@ body {
   height: 50px;
   background-color: var(--active-web-color);
   color: var(--text-white-color);
-  transition-property: background-color box-shadow;
-  transition-duration: 2500ms;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-animation);
 }
 .btn-submit:hover, .btn-submit:focus {
@@ -656,14 +660,14 @@ body {
 }
 
 .btn-portfolio {
-  font-size: 16px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   padding: 6px 22px;
   background-color: var(--background-team-button);
-  transition-property: box-shadow background-color color;
-  transition-duration: 2500ms;
+  transition-property: box-shadow, background-color, color;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-animation);
 }
 .btn-portfolio:hover, .btn-portfolio:focus {
@@ -691,7 +695,7 @@ li:first-child > .btn-portfolio {
   width: calc((100% - 60px) / 3);
   border: 1px solid var(--border-cases-color);
   transition-property: box-shadow;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-animation);
 }
 .cases-item:hover, .cases-item:focus {
@@ -743,7 +747,7 @@ li:first-child > .btn-portfolio {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
   transition-property: transform;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-animation);
 }
 .cases-link:hover .cases-overlay, .cases-link:focus .cases-overlay {

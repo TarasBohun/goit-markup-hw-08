@@ -5,8 +5,8 @@
   letter-spacing: $ls;
 }
 
-@mixin transitions($property) {
+@mixin transitions($property...) {
   transition-property: $property;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: var(--timing-animation);
 }

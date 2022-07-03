@@ -8,7 +8,7 @@
   border-radius: 4px;
   fill: var(--icon-team-color);
 
-  @include transitions(fill border-color);
+  @include transitions(fill, border-color);
 
   // transition: border-color 250ms var(--timing-animation), fill 250ms var(--timing-animation);
 

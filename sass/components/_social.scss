@@ -25,7 +25,7 @@
   justify-content: center;
   border-radius: 50%;
 
-  @include transitions(background-color fill);
+  @include transitions(background-color, fill);
 
   // transition: background-color 250ms var(--timing-animation), fill 250ms var(--timing-animation);
 

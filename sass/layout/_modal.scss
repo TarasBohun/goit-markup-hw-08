@@ -6,7 +6,9 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity 250ms var(--timing-animation), visibility 250ms var(--timing-animation);
+  @include transitions(opacity, visibility);
+
+  // transition: opacity 250ms var(--timing-animation), visibility 250ms var(--timing-animation);
 }
 
 .backdrop.is-hidden {
@@ -29,7 +31,7 @@
 
   transform: translate(-50%, -50%) scale(1);
 
-  @include transitions(transform visibility);
+  @include transitions(transform, visibility);
 
   // transition: transform 250ms var(--timing-animation), visibility 250ms var(--timing-animation);
 }
@@ -55,7 +57,9 @@
 
   cursor: pointer;
 
-  transition: fill 250ms var(--timing-animation);
+  @include transitions(fill);
+
+  // transition: fill 250ms var(--timing-animation);
 
   &:hover {
     fill: var(--active-web-color);

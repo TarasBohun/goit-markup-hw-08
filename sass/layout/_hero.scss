@@ -45,7 +45,7 @@
   background-color: var(--active-web-color);
   color: var(--text-white-color);
 
-  @include transitions(background-color box-shadow);
+  @include transitions(background-color, box-shadow);
 
   // transition: background-color 250ms var(--timing-animation),
   //   box-shadow 250ms var(--timing-animation);
