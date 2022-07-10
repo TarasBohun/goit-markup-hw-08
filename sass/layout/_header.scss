@@ -1,17 +1,31 @@
 .header {
   @include font(500, 14px, 1.15, null);
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.15;
   border-bottom: 1px solid var(--border-header-color);
+
+  @include mobile-only {
+  }
 }
 
-.flex {
-  @extend %flex-align;
+.flex-header {
+  @include mobile-only {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+
+    // position: relative;
+  }
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__logo {
-  margin-right: 93px;
+  @include tablet {
+    margin-right: 93px;
+  }
 }
 
 .accent {
@@ -20,11 +34,17 @@
 }
 
 .nav {
-  @extend %flex-align;
+  @include tablet {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .menu {
-  @extend %flex-align;
+  display: flex;
+  @include mobile-only {
+    display: none;
+  }
 }
 
 .menu__link {
@@ -35,7 +55,6 @@
   padding-bottom: 32px;
 
   @include transitions(color);
-  // transition: color 250ms var(--timing-animation);
 
   &:hover,
   &:focus {
@@ -50,12 +69,15 @@
 
 .header-contacts {
   color: var(--text-grey-color);
-
   letter-spacing: 0.02em;
 }
 
 .header-contacts--to-right {
+  display: flex;
   margin-left: auto;
+  @include mobile-only {
+    display: none;
+  }
 }
 
 .header-contacts__icon {
@@ -75,8 +97,6 @@
 
   @include transitions(color);
 
-  // transition: color 250ms var(--timing-animation);
-
   &:hover,
   &:focus {
     color: var(--active-web-color);
@@ -93,3 +113,5 @@
   border-radius: 2px;
   background-color: var(--active-web-color);
 }
+
+// MOBILE-MENU

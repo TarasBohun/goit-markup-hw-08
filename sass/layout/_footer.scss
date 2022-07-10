@@ -1,3 +1,20 @@
+.flex-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // margin: 0;
+
+  @include tablet-only {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
 .footer {
   background-color: var(--background-solutions-footer);
   letter-spacing: 0.03em;
@@ -10,9 +27,6 @@
 
 .footer-contacts {
   @include font(null, 14px, 1.7, 0.03em);
-  // font-size: 14px;
-  // line-height: 1.7;
-  // letter-spacing: 0.03em;
 
   font-style: inherit;
   margin-top: 20px;
@@ -20,7 +34,18 @@
 
 .footer-contacts-container {
   width: 231px;
-  margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    margin: 0;
+    margin-right: 70px;
+    text-align: start;
+  }
 }
 
 .footer-contacts__link {
@@ -37,14 +62,25 @@
 
 .footer-title {
   @include font(700, 14px, 1.15, null);
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 1.15;
 
   text-transform: uppercase;
-  margin: 0 0 20px;
-  padding-top: 12px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  // padding-top: 12px;
   color: var(--page-background-color);
+
+  text-align: center;
+
+  @include desktop {
+    text-align: left;
+    margin-top: 15px;
+  }
+}
+
+.soc-list {
+  @include desktop {
+    justify-content: start;
+  }
 }
 
 .soc-list__item--footer {
@@ -56,18 +92,60 @@
 }
 
 .footer-soc {
-  margin-right: 93px;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @include tablet {
+    margin-bottom: 102px;
+  }
+
+  @include tablet {
+    width: 50%;
+  }
+
+  @include desktop {
+    margin: 0;
+    margin-right: 93px;
+  }
 }
 
 .footer-form {
-  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    text-align: center;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.footer-tablet-form {
+  @include mobile-only {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .footer-form__input {
-  width: 358px;
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  margin: 0 0 20px;
+
+  @include desktop {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+
   letter-spacing: 0.09em;
   line-height: 1.25;
-  margin-right: 12px;
+  // margin-right: 12px;
   padding-left: 16px;
 
   border-radius: 4px;

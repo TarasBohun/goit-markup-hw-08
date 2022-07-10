@@ -1,23 +1,26 @@
+.cases-list {
+  @extend %flex-gap-30;
+}
+
 .cases-item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
+
   border: 1px solid var(--border-cases-color);
 
   @include transitions(box-shadow);
-
-  // transition: box-shadow 250ms var(--timing-animation);
 
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-
-  &:not(:nth-child(3n)) {
-    margin-right: 30px;
-  }
-
-  &:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
   }
 }
 
@@ -40,11 +43,6 @@
 
 .cases-name-container {
   padding: 20px 24px;
-}
-
-.cases-list {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .cases-thumb {

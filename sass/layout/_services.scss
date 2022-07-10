@@ -1,5 +1,14 @@
 .services {
-  padding-bottom: 94px;
+  display: none;
+
+  @include desktop {
+    display: block;
+    padding-bottom: 94px;
+  }
+}
+
+.services__list {
+  display: flex;
 }
 
 .services__item {
@@ -19,10 +28,6 @@
 
 .services__name {
   @include font(null, 14px, 1.14, 0.03em);
-
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.03em;
 
   margin: 0;
   padding: 27px 0;

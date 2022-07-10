@@ -30,7 +30,7 @@
   <body>
     <!------------ HEADER ------------>
     <header class="header">
-      <div class="container flex">
+      <div class="container flex-header">
         <nav class="nav">
           <a href="" lang="en" class="header__logo logo link animate__animated animate__backInLeft"
             ><span class="accent">Web</span>Studio</a
@@ -63,6 +63,76 @@
             >
           </li>
         </ul>
+        <button type="button" class="btn-menu-open">
+          <svg class="icon-menu" width="40" height="40" aria-label="Відкривання мобільного меню">
+            <use class="icon-menu__open" href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+
+        <!--------- MOBILE-MENU --------->
+
+        <div class="mobile-menu is-hidden">
+          <button type="button" class="btn-menu-close">
+            <svg class="icon-menu" width="40" height="40" aria-label="Закривання мобільного меню">
+              <use class="icon-menu__close" href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <div class="menu-top">
+            <ul class="menu-top__list list">
+              <li class="menu-top__item">
+                <a href="./index.html" class="menu-top__link link accent">Студія</a>
+              </li>
+              <li class="menu-top__item">
+                <a href="./portfolio.html" class="menu-top__link link">Портфоліо</a>
+              </li>
+              <li class="menu-top__item">
+                <a href="#contacts" class="menu-top__link link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-bottom">
+            <ul class="menu-bottom__list list">
+              <li class="menu-bottom__item">
+                <a
+                  href="tel:+380961111111"
+                  class="menu-bottom__link menu-bottom__link--tel accent link"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="menu-bottom__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="menu-bottom__link menu-bottom__link--mail link"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="soc-menu list">
+              <li class="soc-menu__item">
+                <a href="https://www.instagram.com/" target="_blank" class="soc-menu__link link">
+                  Instagram
+                </a>
+              </li>
+              <li class="soc-menu__item">
+                <a href="https://twitter.com/" target="_blank" class="soc-menu__link link">
+                  Twitter
+                </a>
+              </li>
+              <li class="soc-menu__item">
+                <a href="https://www.facebook.com/" target="_blank" class="soc-menu__link link">
+                  Facebook
+                </a>
+              </li>
+              <li class="soc-menu__item">
+                <a href="https://www.linkedin.com/" target="_blank" class="soc-menu__link link">
+                  Linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -139,20 +209,26 @@
               <div class="services__overlay"><h3 class="services__name">Декстопні додатки</h3></div>
               <img
                 class="img-gap"
+                srcset="
+                  ./images/our_services/develop.jpg    1x,
+                  ./images/our_services/develop@2x.jpg 2x
+                "
                 src="./images/our_services/develop.jpg"
                 alt="розробка сайтів"
                 width="370"
-                height="294"
               />
             </li>
             <li class="services__item">
               <div class="services__overlay"><h3 class="services__name">Мобільні додатки</h3></div>
               <img
                 class="img-gap"
+                srcset="
+                  ./images/our_services/prototype.jpg    1x,
+                  ./images/our_services/prototype@2x.jpg 2x
+                "
                 src="./images/our_services/prototype.jpg"
                 alt="розробка мобільних додатків"
                 width="370"
-                height="294"
               />
             </li>
             <li class="services__item">
@@ -161,10 +237,10 @@
               </div>
               <img
                 class="img-gap"
+                srcset="./images/our_services/design.jpg 1x, ./images/our_services/design@2x.jpg 2x"
                 src="./images/our_services/design.jpg"
                 alt="розробка дизайну"
                 width="370"
-                height="294"
               />
             </li>
           </ul>
@@ -175,15 +251,38 @@
       <section class="team section">
         <h2 class="title-second">Наша команда</h2>
         <div class="container">
-          <ul class="list">
+          <ul class="team-list list">
             <li class="team__item">
-              <img
-                class="img-gap"
-                src="./images/our_team/ihor_demjanenko.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our_team/ihor_demjanenko-desktop.jpg    1x,
+                    ./images/our_team/ihor_demjanenko-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our_team/ihor_demjanenko-tablet.jpg    1x,
+                    ./images/our_team/ihor_demjanenko-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our_team/ihor_demjanenko-mobile.jpg    1x,
+                    ./images/our_team/ihor_demjanenko-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="img-gap"
+                  src="./images/our_team/ihor_demjanenko-desktop.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-members-container">
                 <h3 class="team__members">Ігор Дем'яненко</h3>
                 <p class="team__specialist" lang="en">Product Designer</p>
@@ -236,13 +335,36 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="img-gap"
-                src="./images/our_team/olha_repyna.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our_team/olha_repyna-desktop.jpg    1x,
+                    ./images/our_team/olha_repyna-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our_team/olha_repyna-tablet.jpg    1x,
+                    ./images/our_team/olha_repyna-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our_team/olha_repyna-mobile.jpg    1x,
+                    ./images/our_team/olha_repyna-mobile@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="img-gap"
+                  src="./images/our_team/olha_repyna-desktop.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-members-container">
                 <h3 class="team__members">Ольга Репина</h3>
                 <p class="team__specialist" lang="en">Frontend Developer</p>
@@ -295,13 +417,36 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="img-gap"
-                src="./images/our_team/mykola_tarasov.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our_team/mykola_tarasov-desktop.jpg    1x,
+                    ./images/our_team/mykola_tarasov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our_team/mykola_tarasov-tablet.jpg    1x,
+                    ./images/our_team/mykola_tarasov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our_team/mykola_tarasov-mobile.jpg    1x,
+                    ./images/our_team/mykola_tarasov-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="img-gap"
+                  src="./images/our_team/mykola_tarasov-desktop.jpg"
+                  alt="Микола Тарасов"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-members-container">
                 <h3 class="team__members">Микола Тарасов</h3>
                 <p class="team__specialist" lang="en">Marketing</p>
@@ -354,13 +499,36 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="img-gap"
-                src="./images/our_team/mykhailo_ermakov.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our_team/mykhailo_ermakov-desktop.jpg    1x,
+                    ./images/our_team/mykhailo_ermakov-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our_team/mykhailo_ermakov-tablet.jpg    1x,
+                    ./images/our_team/mykhailo_ermakov-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our_team/mykhailo_ermakov-mobile.jpg    1x,
+                    ./images/our_team/mykhailo_ermakov-mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="img-gap"
+                  src="./images/our_team/mykhailo_ermakov-desktop.jpg"
+                  alt="Михайло Єрмаков"
+                  width="270"
+                />
+              </picture>
+
               <div class="team-members-container">
                 <h3 class="team__members">Михайло Єрмаков</h3>
                 <p class="team__specialist" lang="en">UI Designer</p>
@@ -468,9 +636,9 @@
       </section>
     </main>
 
-    <!------------ FOOTER ------------>
+    <!-- ---------- FOOTER ------------>
     <footer class="footer">
-      <div class="container flex">
+      <div class="container flex-footer">
         <div class="footer-contacts-container">
           <a href="" lang="en" class="logo logo-white link"
             ><span class="accent">Web</span>Studio</a
@@ -553,7 +721,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="footer-tablet-form">
           <h3 class="footer-title">Підпишіться на розсилку</h3>
           <form class="footer-form">
             <input type="email" class="footer-form__input" placeholder="E-mail" />
@@ -635,5 +803,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

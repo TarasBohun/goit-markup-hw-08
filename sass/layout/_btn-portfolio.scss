@@ -1,15 +1,10 @@
 .btn-portfolio {
   @include font(500, 16px, 1.6, 00.03em);
-  // font-size: 16px;
-  // font-weight: 500;
-  // line-height: 1.6;
-  // letter-spacing: 0.03em;
+
   padding: 6px 22px;
   background-color: var(--background-team-button);
 
   @include transitions(box-shadow, background-color, color);
-  // transition: box-shadow 250ms var(--timing-animation),
-  // background-color 250ms var(--timing-animation), color 250ms var(--timing-animation);
 
   &:hover,
   &:focus {
@@ -28,11 +23,34 @@
 }
 
 .btn-portfolio-list {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  @include tablet {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .btn-portfolio-list li:not(:last-child) {
   margin-right: 8px;
+}
+
+.btn-portfolio-list li:nth-child(3) {
+  @include mobile-only {
+    margin-bottom: 15px;
+  }
+}
+
+// Костилі :)) ?????
+
+.btn-portfolio-list li:first-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
