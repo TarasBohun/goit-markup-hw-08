@@ -35,22 +35,6 @@
   @include desktop {
     margin-bottom: 50px;
   }
-}
 
-.btn-portfolio-list li:not(:last-child) {
-  margin-right: 8px;
-}
-
-.btn-portfolio-list li:nth-child(3) {
-  @include mobile-only {
-    margin-bottom: 15px;
-  }
-}
-
-// Костилі :)) ?????
-
-.btn-portfolio-list li:first-child {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 15px;
-  }
+  gap: 15px 8px;
 }

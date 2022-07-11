@@ -20,10 +20,10 @@
   z-index: 2;
   top: 0;
   left: 0;
-  padding: 48px 40px 60px;
+  padding: 48px 40px 68px;
 
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -35,6 +35,10 @@
 
 .mobile-menu.is-hidden {
   display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .menu-top {
